@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asturbuild</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>Welcome to my future website for "AsturBuild"</h1>
-</body>
 
+    <!-- Cabecera / Navegación -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Asturbuild Logo">
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>PCs Personalizados en Asturias</h1>
+            <p>Diseñamos, montamos y optimizamos el ordenador de tus sueños a medida para gaming, trabajo o alto rendimiento.</p>
+            <a href="#contacto" class="btn-primary">Pide tu Presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>PCs Gaming a Medida</h3>
+                    <p>Componentes de última generación seleccionados para ofrecerte los máximos FPS y la mejor experiencia de juego.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Workstations Profesionales</h3>
+                    <p>Equipos optimizados para edición de vídeo, diseño 3D, renderizado y tareas de alta exigencia laboral.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Asesoramiento y Mantenimiento</h3>
+                    <p>Te ayudamos a elegir cada pieza según tu presupuesto y realizamos mantenimiento y actualizaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="about">
+        <div class="container about-content">
+            <h2>Pasión por el Hardware en Asturias</h2>
+            <p>En Asturbuild nos tomamos cada montaje como un proyecto único. Cuidamos cada detalle, desde la gestión de cables y el flujo de aire hasta la estética final, garantizando máxima calidad y rendimiento optimizado.</p>
+        </div>
+    </section>
+
+<!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>¿Hablamos de tu próximo PC?</h2>
+            <p>Haz clic en el botón de abajo para enviarnos un correo electrónico directamente con los detalles de tu consulta.</p>
+            
+            <form action="mailto:asturbuilds@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="Email_de_contacto" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="Consulta" rows="5" placeholder="Cuéntanos qué buscas (Presupuesto, uso, componentes...)" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Correo a Asturbuild</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Asturbuild. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
